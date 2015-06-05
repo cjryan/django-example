@@ -73,8 +73,7 @@ documentation at [the django example site](https://docs.djangoproject.com/en/1.8
 If, when running `python manage.py createsuperuser`, you encounter a
 `django.db.utils.IntegrityError` error, please be sure that you've migrated
 your database first, using `python manage.py migrate`. Once you've created
-the admin user, and changed the password using `python manage.py changepassword admin`,
-perform a `git push`.
+the admin user, perform a `git push`.
 
 As the `git push` output scrolls by, keep an eye out for a
 line of output that starts with `Django application credentials: `. This line
