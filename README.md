@@ -82,5 +82,7 @@ contains the generated admin password that you will need to begin
 administering your Django app. This is the only time the password
 will be displayed, so be sure to save it somewhere. You might want
 to pipe the output of the git push to a text file so you can grep for
-the password later.
+the password later. If you need to reference the credentials later, `rhc ssh <app_name>`
+to your app, and check the `$OPENSHIFT_DATA_DIR` for a CREDENTIALS file, which should
+contain your login information.
 
