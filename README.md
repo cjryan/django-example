@@ -68,11 +68,19 @@ That's it. You can now checkout your application at:
 
 Admin user name and password
 ----------------------------
+To configure the admin username and password, please reference the
+documentation at [the django example site](https://docs.djangoproject.com/en/1.8/intro/tutorial02/).
+If, when running `python manage.py createsuperuser`, you encounter a
+`django.db.utils.IntegrityError` error, please be sure that you've migrated
+your database first, using `python manage.py migrate`. Once you've created
+the admin user, and changed the password using `python manage.py changepassword admin`,
+perform a `git push`.
+
 As the `git push` output scrolls by, keep an eye out for a
 line of output that starts with `Django application credentials: `. This line
 contains the generated admin password that you will need to begin
 administering your Django app. This is the only time the password
-will be displayed, so be sure to save it somewhere. You might want 
+will be displayed, so be sure to save it somewhere. You might want
 to pipe the output of the git push to a text file so you can grep for
 the password later.
 
